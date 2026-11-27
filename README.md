@@ -12,7 +12,7 @@ Aucune compilation ni dépendance n'est nécessaire.
 ## Contenu
 
 - Présentation du club
-- Effectif des joueurs avec filtres par poste et liens vers leurs réseaux sociaux
+- Effectif avec filtres par poste, liens sociaux et fiche détaillée de Sarfati
 - Classement des 11 équipes, avec le barème de points CFL
 - Classement détaillé triable par buts marqués ou encaissés
 - Calendrier des entraînements et dernier résultat

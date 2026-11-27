@@ -147,6 +147,17 @@
   gap: 16px;
 }
 
+.players-content-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+  align-items: start;
+  gap: 24px;
+}
+
+.players-roster {
+  min-width: 0;
+}
+
 .player-card {
   --card-foreground: #fffaf0;
   --card-muted: rgba(255, 250, 240, 0.76);
@@ -268,6 +279,27 @@
   font-weight: 650;
 }
 
+.player-details-link {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 0 11px;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--card-foreground);
+  font-size: 10px;
+  font-weight: 750;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.player-details-link:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .player-socials {
   display: flex;
   flex-wrap: wrap;
@@ -314,6 +346,67 @@
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  .players-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.staff-section {
+  padding-top: 4px;
+}
+
+.staff-section > .eyebrow {
+  margin-bottom: 8px;
+}
+
+.staff-section h2 {
+  margin: 0 0 16px;
+  color: var(--navy);
+  font-size: 27px;
+  font-weight: 850;
+  letter-spacing: -0.05em;
+}
+
+.staff-card {
+  min-height: 180px;
+  padding: 18px;
+  border: 1px solid rgba(214, 174, 95, 0.34);
+  border-radius: 10px;
+  background: linear-gradient(145deg, #123b68, #07172d 72%, #681629);
+  color: var(--white);
+  box-shadow: 0 12px 25px rgba(7, 23, 45, 0.1);
+}
+
+.staff-mark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 15px;
+  place-items: center;
+  border: 1px solid rgba(242, 230, 199, 0.5);
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(214, 174, 95, 0.4), rgba(162, 30, 52, 0.65));
+  color: var(--cream);
+  font-size: 19px;
+  font-weight: 850;
+}
+
+.staff-role,
+.staff-caption {
+  margin: 0;
+  color: rgba(255, 250, 240, 0.75);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.staff-card h3 {
+  margin: 3px 0 8px;
+  font-size: 22px;
+  font-weight: 850;
+  letter-spacing: -0.04em;
+}
+
 @media (max-width: 760px) {
   .players-hero {
     padding: 25px 0 42px;
@@ -333,17 +426,21 @@
     gap: 20px;
   }
 
+  .players-content-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
   .player-filters {
     justify-content: flex-start;
   }
 
-  .players-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 11px;
-  }
-
   .player-card {
     padding: 14px;
+  }
+
+  .players-grid {
+    gap: 11px;
   }
 
   .player-position {

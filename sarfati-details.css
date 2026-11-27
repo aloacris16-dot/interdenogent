@@ -1,0 +1,243 @@
+.sarfati-hero {
+  background:
+    radial-gradient(circle at 82% 25%, rgba(162, 30, 52, 0.28), transparent 30%),
+    linear-gradient(135deg, var(--navy), #321b32 62%, #681629);
+}
+
+.sarfati-hero .players-hero-content > p:not(.eyebrow) {
+  margin-bottom: 0;
+  color: #e2d7d4;
+  font-weight: 700;
+}
+
+.sarfati-hero .players-hero-decoration {
+  color: rgba(255, 255, 255, 0.055);
+}
+
+.sarfati-details {
+  padding: 58px 0 76px;
+  background:
+    radial-gradient(circle at 10% 12%, rgba(162, 30, 52, 0.06), transparent 25%),
+    var(--paper);
+}
+
+.sarfati-details-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 34px;
+}
+
+.sarfati-card-art {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  min-height: 360px;
+  margin: 0;
+  padding: 18px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(214, 174, 95, 0.42);
+  border-radius: 14px;
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(214, 174, 95, 0.22), transparent 48%),
+    linear-gradient(145deg, #123b68, #07172d 62%, #681629);
+  box-shadow: 0 18px 42px rgba(7, 23, 45, 0.2);
+}
+
+.sarfati-card-art img {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  max-height: min(78vh, 820px);
+  object-fit: contain;
+  filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.25));
+}
+
+.sarfati-card-art figcaption {
+  position: absolute;
+  right: 12px;
+  bottom: 11px;
+  left: 12px;
+  color: rgba(255, 252, 243, 0.78);
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sarfati-profile {
+  display: grid;
+  gap: 20px;
+}
+
+.sarfati-panel {
+  padding: 24px;
+  border: 1px solid #e4ddce;
+  border-radius: 12px;
+  background: rgba(255, 252, 243, 0.92);
+  box-shadow: 0 12px 28px rgba(7, 23, 45, 0.07);
+}
+
+.sarfati-panel .eyebrow {
+  margin-bottom: 8px;
+}
+
+.sarfati-panel h2 {
+  margin: 0 0 18px;
+  color: var(--navy);
+  font-size: 29px;
+  font-weight: 850;
+  letter-spacing: -0.055em;
+}
+
+.sarfati-table-scroll {
+  overflow-x: auto;
+  border: 1px solid #e7e1d5;
+  border-radius: 8px;
+}
+
+.sarfati-table-scroll:focus-visible {
+  outline: 3px solid var(--burgundy);
+  outline-offset: 3px;
+}
+
+.sarfati-stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.sarfati-stats-table th,
+.sarfati-stats-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid #ece6db;
+}
+
+.sarfati-stats-table thead {
+  background: #f3eddf;
+  color: #53667c;
+  font-size: 9px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.sarfati-stats-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.sarfati-stats-table tbody td {
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.sarfati-stats-table tbody td:last-child {
+  width: 44px;
+  color: var(--burgundy);
+  font-size: 14px;
+  font-weight: 900;
+  text-align: right;
+}
+
+.sarfati-stats-table tbody td:nth-child(2) {
+  width: 48%;
+}
+
+.sarfati-stat-meter {
+  display: block;
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 99px;
+  appearance: none;
+  background: #e8e1d6;
+}
+
+.sarfati-stat-meter::-webkit-progress-bar {
+  border-radius: 99px;
+  background: #e8e1d6;
+}
+
+.sarfati-stat-meter::-webkit-progress-value {
+  border-radius: 99px;
+  background: linear-gradient(90deg, #123b68, #a21e34 78%, #d6ae5f);
+}
+
+.sarfati-stat-meter::-moz-progress-bar {
+  border-radius: 99px;
+  background: linear-gradient(90deg, #123b68, #a21e34 78%, #d6ae5f);
+}
+
+.sarfati-stats-note {
+  margin: 11px 0 0;
+  color: #657187;
+  font-size: 10px;
+}
+
+.sarfati-description > p:not(.eyebrow) {
+  margin: 0 0 12px;
+  color: #536176;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.sarfati-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 17px;
+}
+
+.sarfati-socials a {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  border: 1px solid rgba(7, 23, 45, 0.16);
+  border-radius: 5px;
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.sarfati-socials a:hover {
+  background: #f0e9dc;
+}
+
+.sarfati-socials a span {
+  color: var(--burgundy);
+}
+
+@media (max-width: 760px) {
+  .sarfati-details {
+    padding: 38px 0 56px;
+  }
+
+  .sarfati-details-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .sarfati-card-art {
+    min-height: 280px;
+  }
+
+  .sarfati-card-art img {
+    max-width: 360px;
+    max-height: 78vh;
+  }
+
+  .sarfati-panel {
+    padding: 19px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .player-details-link {
+    transition: none;
+  }
+}

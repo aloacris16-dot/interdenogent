@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#07172d" />
     <meta
       name="description"
-      content="Découvrez les joueurs de l'Inter Nogent et filtrez l'effectif par poste."
+      content="Découvrez l'équipe de l'Inter Nogent, ses joueurs et son staff."
     />
-    <title>Nos joueurs — Inter Nogent</title>
+    <title>Notre équipe — Inter Nogent</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="joueurs.css" />
     <script src="joueurs.js" defer></script>
@@ -25,7 +25,7 @@
         </a>
         <nav class="desktop-nav" aria-label="Navigation principale">
           <a href="index.html#club">Le club</a>
-          <a href="joueurs.html" aria-current="page">Nos joueurs</a>
+          <a href="joueurs.html" aria-current="page">Notre équipe</a>
           <a href="index.html#classement">Classement</a>
           <a href="index.html#calendrier">Calendrier</a>
           <a class="nav-contact" href="index.html#contact">Nous contacter <span aria-hidden="true">↗</span></a>
@@ -37,7 +37,7 @@
           </summary>
           <nav aria-label="Navigation mobile">
             <a href="index.html#club">Le club</a>
-            <a href="joueurs.html" aria-current="page">Nos joueurs</a>
+            <a href="joueurs.html" aria-current="page">Notre équipe</a>
             <a href="index.html#classement">Classement</a>
             <a href="index.html#calendrier">Calendrier</a>
             <a href="index.html#contact">Nous contacter</a>
@@ -53,7 +53,7 @@
             <span aria-hidden="true">←</span> Retour au site
           </a>
           <p class="eyebrow"><span class="live-dot"></span> Inter Nogent · Seniors</p>
-          <h1>Nos joueurs<span>.</span></h1>
+          <h1>Notre équipe<span>.</span></h1>
           <p>Découvrez l'effectif et choisissez un poste pour filtrer les joueurs.</p>
           <span class="players-count" id="players-count">7 joueurs</span>
         </div>
@@ -77,100 +77,116 @@
           </div>
           <p class="players-status sr-only" id="players-status" aria-live="polite">7 joueurs affichés.</p>
 
-          <div class="players-grid" id="players-grid">
-            <article class="player-card player-card--attacker" data-positions="attaquant">
-              <div class="player-card-top">
-                <span class="player-number">10</span>
-                <span class="player-position">Attaquant</span>
-              </div>
-              <div class="player-portrait" aria-hidden="true"><span>N</span></div>
-              <h3>Naty</h3>
-              <p class="player-role">Attaquant</p>
-              <div class="player-socials" aria-label="Réseaux sociaux">
-                <span class="player-social-unavailable">Réseaux à venir</span>
-              </div>
-            </article>
+          <div class="players-content-layout">
+            <div class="players-roster">
+            <div class="players-grid" id="players-grid">
+              <article class="player-card player-card--attacker" data-positions="attaquant">
+                <div class="player-card-top">
+                  <span class="player-number">10</span>
+                  <span class="player-position">Attaquant</span>
+                </div>
+                <div class="player-portrait" aria-hidden="true"><span>N</span></div>
+                <h3>Naty</h3>
+                <p class="player-role">Attaquant</p>
+                <div class="player-socials" aria-label="Réseaux sociaux">
+                  <span class="player-social-unavailable">Réseaux à venir</span>
+                </div>
+              </article>
 
-            <article class="player-card player-card--defender" data-positions="defenseur">
-              <div class="player-card-top">
-                <span class="player-number">25</span>
-                <span class="player-position">Défenseur</span>
-              </div>
-              <div class="player-portrait" aria-hidden="true"><span>A</span></div>
-              <h3>Alain</h3>
-              <p class="player-role">Défenseur</p>
-              <div class="player-socials" aria-label="Réseaux sociaux">
-                <a href="https://www.instagram.com/august1.94?hvrq=MWEwMHJsaXF1dmt5ZA==" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
+              <article class="player-card player-card--defender" data-positions="defenseur">
+                <div class="player-card-top">
+                  <span class="player-number">25</span>
+                  <span class="player-position">Défenseur</span>
+                </div>
+                <div class="player-portrait" aria-hidden="true"><span>A</span></div>
+                <h3>Alain</h3>
+                <p class="player-role">Défenseur</p>
+                <div class="player-socials" aria-label="Réseaux sociaux">
+                  <a href="https://www.instagram.com/august1.94?hvrq=MWEwMHJsaXF1dmt5ZA==" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
 
-            <article class="player-card player-card--attacker" data-positions="attaquant">
-              <div class="player-card-top">
-                <span class="player-number">9</span>
-                <span class="player-position">Attaquant</span>
-              </div>
-              <div class="player-portrait" aria-hidden="true"><span>S</span></div>
-              <h3>Sarfati <span class="captain-mark" aria-label="Capitaine">C</span></h3>
-              <p class="player-role">Attaquant · Capitaine</p>
-              <div class="player-socials" aria-label="Réseaux sociaux">
-                <a href="https://www.instagram.com/nath_srft?avpt=MWNndXpia2N0cTZvZg==" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-                <a href="https://www.tiktok.com/@nathan_srft?_r=1&_t=ZN-9BhXGJKfwXO" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
+              <article class="player-card player-card--attacker" data-positions="attaquant">
+                <div class="player-card-top">
+                  <span class="player-number">9</span>
+                  <span class="player-position">Attaquant</span>
+                </div>
+                <h3>Sarfati <span class="captain-mark" aria-label="Capitaine">C</span></h3>
+                <p class="player-role">Attaquant · Capitaine</p>
+                <a class="player-details-link" href="sarfati-details.html">
+                  Détails <span aria-hidden="true">↗</span>
+                </a>
+                <div class="player-socials" aria-label="Réseaux sociaux">
+                  <a href="https://www.instagram.com/nath_srft?avpt=MWNndXpia2N0cTZvZg==" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                  <a href="https://www.tiktok.com/@nathan_srft?_r=1&_t=ZN-9BhXGJKfwXO" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
 
-            <article class="player-card player-card--hybrid" data-positions="defenseur milieu">
-              <div class="player-card-top">
-                <span class="player-number">77</span>
-                <span class="player-position">Défenseur · Milieu</span>
-              </div>
-              <div class="player-portrait" aria-hidden="true"><span>N</span></div>
-              <h3>Noah</h3>
-              <p class="player-role">Défenseur · Milieu</p>
-              <div class="player-socials" aria-label="Réseaux sociaux">
-                <a href="https://www.instagram.com/noah.ctf77?jplx=ZnFvdGJ2dzB1bzVi" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
+              <article class="player-card player-card--hybrid" data-positions="defenseur milieu">
+                <div class="player-card-top">
+                  <span class="player-number">77</span>
+                  <span class="player-position">Défenseur · Milieu</span>
+                </div>
+                <div class="player-portrait" aria-hidden="true"><span>N</span></div>
+                <h3>Noah</h3>
+                <p class="player-role">Défenseur · Milieu</p>
+                <div class="player-socials" aria-label="Réseaux sociaux">
+                  <a href="https://www.instagram.com/noah.ctf77?jplx=ZnFvdGJ2dzB1bzVi" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
 
-            <article class="player-card player-card--defender" data-positions="defenseur">
-              <div class="player-card-top">
-                <span class="player-number">52</span>
-                <span class="player-position">Défenseur</span>
-              </div>
-              <div class="player-portrait" aria-hidden="true"><span>N</span></div>
-              <h3>N.Charbit</h3>
-              <p class="player-role">Défenseur</p>
-              <div class="player-socials" aria-label="Réseaux sociaux">
-                <a href="https://www.instagram.com/nathan_charbit?dmpr=ZTdjbGphamVzZ2Ix" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
+              <article class="player-card player-card--defender" data-positions="defenseur">
+                <div class="player-card-top">
+                  <span class="player-number">52</span>
+                  <span class="player-position">Défenseur</span>
+                </div>
+                <div class="player-portrait" aria-hidden="true"><span>N</span></div>
+                <h3>N.Charbit</h3>
+                <p class="player-role">Défenseur</p>
+                <div class="player-socials" aria-label="Réseaux sociaux">
+                  <a href="https://www.instagram.com/nathan_charbit?dmpr=ZTdjbGphamVzZ2Ix" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
 
-            <article class="player-card player-card--midfielder" data-positions="milieu">
-              <div class="player-card-top">
-                <span class="player-number">18</span>
-                <span class="player-position">Milieu</span>
-              </div>
-              <div class="player-portrait" aria-hidden="true"><span>G</span></div>
-              <h3>GOLEM</h3>
-              <p class="player-role">Milieu</p>
-              <div class="player-socials" aria-label="Réseaux sociaux">
-                <a href="https://www.instagram.com/lior.marciano.5?hvrq=cjR2ZXg3YzlvYzZr" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
+              <article class="player-card player-card--midfielder" data-positions="milieu">
+                <div class="player-card-top">
+                  <span class="player-number">18</span>
+                  <span class="player-position">Milieu</span>
+                </div>
+                <div class="player-portrait" aria-hidden="true"><span>G</span></div>
+                <h3>GOLEM</h3>
+                <p class="player-role">Milieu</p>
+                <div class="player-socials" aria-label="Réseaux sociaux">
+                  <a href="https://www.instagram.com/lior.marciano.5?hvrq=cjR2ZXg3YzlvYzZr" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
 
-            <article class="player-card player-card--attacker" data-positions="attaquant">
-              <div class="player-card-top">
-                <span class="player-number">29</span>
-                <span class="player-position">Attaquant</span>
-              </div>
-              <div class="player-portrait" aria-hidden="true"><span>L</span></div>
-              <h3>Levy</h3>
-              <p class="player-role">Attaquant</p>
-              <div class="player-socials" aria-label="Réseaux sociaux">
-                <span class="player-social-unavailable">Réseaux à venir</span>
-              </div>
-            </article>
+              <article class="player-card player-card--attacker" data-positions="attaquant">
+                <div class="player-card-top">
+                  <span class="player-number">29</span>
+                  <span class="player-position">Attaquant</span>
+                </div>
+                <div class="player-portrait" aria-hidden="true"><span>L</span></div>
+                <h3>Levy</h3>
+                <p class="player-role">Attaquant</p>
+                <div class="player-socials" aria-label="Réseaux sociaux">
+                  <span class="player-social-unavailable">Réseaux à venir</span>
+                </div>
+              </article>
+            </div>
+            <p class="players-empty" id="players-empty" hidden>Aucun joueur pour ce poste pour le moment.</p>
+            </div>
+            <aside class="staff-section" aria-labelledby="staff-title">
+              <p class="eyebrow eyebrow-dark">En dehors du terrain</p>
+              <h2 id="staff-title">Le staff</h2>
+              <article class="staff-card">
+                <span class="staff-mark" aria-hidden="true">E</span>
+                <p class="staff-role">Entraîneur</p>
+                <h3>Ethan</h3>
+                <p class="staff-caption">Staff technique</p>
+              </article>
+            </aside>
           </div>
-          <p class="players-empty" id="players-empty" hidden>Aucun joueur pour ce poste pour le moment.</p>
         </div>
       </section>
     </main>
